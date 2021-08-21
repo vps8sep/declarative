@@ -26,10 +26,6 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Archive Artifacts'){
-            steps {
-                sh 'archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false'
-            }
-        }
+       
     }
     }
